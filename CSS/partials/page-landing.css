@@ -64,6 +64,7 @@
 
 .buttons a.study:hover {
   background: var(--color-primary-light);
+  transform: translateY(-5px);
 }
 
 .buttons a.give-classes {
@@ -72,6 +73,7 @@
 
 .buttons a.give-classes:hover {
   background: var(--color-secondary-dark);
+  transform: translateY(-5px);
 }
 
 .total-connections {
@@ -128,6 +130,7 @@
     grid-area: button;
     justify-content: flex-start;
     margin: 0;
+    transition: 3s;
   }
 
   .total-connections {
