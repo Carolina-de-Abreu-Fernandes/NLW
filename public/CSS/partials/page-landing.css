@@ -89,13 +89,17 @@
   margin-left: 0.8rem;
 }
 
-@media (max-width: 699px) {
+@media (max-width: 800px) {
   :root {
     font-size: 40%;
   }
+
+  .hero-image {
+    width: 50rem;
+  }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1000px) {
   #page-landing #container {
     max-width: 1100px;
     display: grid;
