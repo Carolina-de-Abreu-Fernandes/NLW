@@ -51,6 +51,11 @@ async function pageStudy(req, res) {
 function pageGiveClasses(req, res) {
   return res.render('give-classes.html', { subjects, weekdays });
 }
+function pageSuccess(req, res) {
+  return res.render('page-success.html');
+}
+
+// let redirect = setTimeout(pageSuccess, 2000);
 
 async function saveClasses(req, res) {
   const createProffy = require('./database/createProffy');
@@ -88,4 +93,5 @@ module.exports = {
   pageStudy,
   pageGiveClasses,
   saveClasses,
+  pageSuccess,
 };

@@ -1,5 +1,6 @@
 .page-header {
-  background-color: var(--color-primary);
+  background-image: linear-gradient(to right, var(--color-primary-darker), var(--color-primary-dark), var(--color-primary), var(--color-primary-light), var(--color-primary-lighter));
+  ;
 
   display: flex;
   flex-direction: column;

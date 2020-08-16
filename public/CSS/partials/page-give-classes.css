@@ -51,13 +51,13 @@
   color: var(--color-primary-dark);
 }
 
-#page-give-classes main fieldset + fieldset {
+#page-give-classes main fieldset+fieldset {
   margin-top: 6.4rem;
 }
 
-#page-give-classes input-block + .input-block,
-#page-give-classes input-block + .textarea-block,
-#page-give-classes select-block + .input-block {
+#page-give-classes input-block+.input-block,
+#page-give-classes input-block+.textarea-block,
+#page-give-classes select-block+.input-block {
   margin-top: 2.4rem;
 }
 
@@ -83,7 +83,7 @@
 }
 
 #page-give-classes main footer button {
-  width: 100%;
+  width: 90%;
   height: 5.6rem;
   background: var(--color-secondary);
   color: var(--color-button-text);
@@ -97,6 +97,7 @@
   text-decoration: none;
   transition: 0.5s;
   margin-top: 3.2rem;
+  margin-left: 15rem;
 }
 
 #page-give-classes main footer button:hover {
@@ -104,7 +105,7 @@
   background-color: var(--color-secondary-dark);
 }
 
-.schedule-item + .schedule-item {
+.schedule-item+.schedule-item {
   margin-top: 3.2rem;
   padding-top: 3.2rem;
 
@@ -131,10 +132,11 @@
     column-gap: 1.6rem;
   }
 
-  #page-give-classes #schedule-items .select-block + .input-block,
-  #page-give-classes #schedule-items .input-block + .input-block {
+  #page-give-classes #schedule-items .select-block+.input-block,
+  #page-give-classes #schedule-items .input-block+.input-block {
     margin-top: 0;
   }
+
   #page-give-classes main footer {
     padding: 40px 64px;
 
@@ -143,7 +145,7 @@
     justify-content: space-between;
   }
 
-  #page-give-classes main footer button {
+  #page-give-classes main footer a {
     margin-top: 0;
     width: 200px;
   }

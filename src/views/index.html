@@ -33,10 +33,20 @@
       </a>
     </div>
 
-    <p class="total-connections">
-      Total de 200 conexões já realizadas
-      <img src="/images/icons/purple-heart.svg" alt="Coração roxo" /> </p>
-  </div>
+    <div class="total-connections">
+      <script type="text/javascript">
+        let clicks = 200;
+
+        function onClick() {
+          clicks += 1;
+          document.getElementById("clicks").innerHTML = clicks;
+        };
+      </script>
+      <button type="button" onClick="onClick()">
+        <img src="/images/icons/purple-heart.svg" alt="purple-heart">
+      </button>
+      <p class="total-connections">Total de curtidas já realizadas: <a id="clicks"> 200</a></p>
+    </div>
 </body>
 
 </html>

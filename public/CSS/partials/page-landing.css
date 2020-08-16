@@ -1,5 +1,6 @@
 #page-landing {
-  background: var(--color-primary);
+  /* background: var(--color-primary); */
+  background-image: linear-gradient(to left, var(--color-primary-darker), var(--color-primary-dark), var(--color-primary), var(--color-primary-light), var(--color-primary-lighter));
 }
 
 #page-landing #container {
@@ -50,7 +51,6 @@
   transition: background 0.2s;
 
   color: var(--color-button-text);
-
 }
 
 .buttons a img {
@@ -59,11 +59,11 @@
 }
 
 .buttons a.study {
-  background: var(--color-primary-lighter);
+  background: var(--color-primary-dark);
 }
 
 .buttons a.study:hover {
-  background: var(--color-primary-light);
+  background: var(--color-primary-darker);
   transform: translateY(-5px);
 }
 
@@ -82,11 +82,46 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
 
+.total-connections p {
+  display: contents;
+  align-items: center;
+  justify-content: center;
+  font: 600 1.4rem poppins;
+}
+
+.total-connections a {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+  font: 600 1.4rem poppins;
+
+  padding: 1rem;
+  border-radius: .8rem;
+
+  background: var(--color-primary-dark);
 }
 
 .total-connections img {
-  margin-left: 0.8rem;
+  background: var(--color-primary);
+  border-style: none;
+  text-align: center;
+}
+
+.total-connections button {
+  width: 100%;
+  height: 5.6rem;
+  background: var(--color-primary);
+  border: 0;
+  border-radius: .8rem;
+  cursor: pointer;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  text-decoration: none;
+  margin-right: 3rem;
 }
 
 @media (max-width: 800px) {
@@ -95,7 +130,7 @@
   }
 
   .hero-image {
-    width: 50rem;
+    text-align: center;
   }
 }
 
@@ -105,11 +140,11 @@
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
     grid-template-rows: 350px 1fr;
-    grid-template-areas:
-      "proffy image image"
-      "button button texting";
+    grid-template-areas: 'proffy image image'
+      'button button texting';
     column-gap: 87px;
     row-gap: 86px;
+    padding-bottom: 20px;
   }
 
   .logo-container {
@@ -121,13 +156,11 @@
 
   .logo-container img {
     height: 127px;
-
   }
 
   .hero-image {
     grid-area: image;
     height: 350px;
-
   }
 
   .buttons {
